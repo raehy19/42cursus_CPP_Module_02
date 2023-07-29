@@ -59,7 +59,7 @@ float Fixed::toFloat() const {
 }
 
 std::ostream &operator<<(std::ostream &out, const Fixed &fixed) {
-
-	return (out << fixed.toFloat());
+	out << fixed.toFloat();
+	return (out);
 }
 
